@@ -1,0 +1,55 @@
+/* ↓ do stuff ↓ */
+
+
+/*
+ * Font Family: Satoshi
+ * Designed by: Deni Anggara
+ * URL: https://www.fontshare.com/fonts/satoshi
+ * © 2022 Indian Type Foundry
+*/
+
+@font-face {
+    font-family: Satoshi-Black;
+    src: url('../resources/fonts/Satoshi-Black.ttf') format('woff2'),
+        url('../resources/fonts/Satoshi-Black.woff') format('woff'),
+        url('../resources/fonts/Satoshi-Black.ttf') format('truetype');
+
+}
+
+body {
+    background-color: #060708;
+    margin: 5rem;
+}
+
+p {
+    font-family: Satoshi-Black;
+    font-size: 2rem;
+    color: #FFF5EA;
+    margin: 0;
+    margin-block: -.5rem;
+    user-select: none;
+}
+
+.static,
+.dynamic {
+    position: absolute;
+}
+
+.aria {
+    position: absolute;
+    /* only visible to screen reader */
+    left: -10000px;
+}
+
+
+/* ↓ mobile starts here ↓ */
+
+@media screen and (max-width: 670px) {
+    body {
+        margin: 3rem;
+    }
+
+    p {
+        font-size: 1.7rem;
+    }
+}
